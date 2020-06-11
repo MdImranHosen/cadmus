@@ -2,6 +2,7 @@
 ## Author: Md. Imran Hosen
 <br>
 <h1>Admin</h1>
+<h3> URL: localhost/mobile-web-admin-panel/admin </h3>
 <img src="Doc/admin login.png" />
 <img src="Doc/a.png" />
 <img src="Doc/b.png" />
@@ -9,6 +10,7 @@
 <br><br>
 <hr>
 <h1>User</h1>
+<h3> URL: localhost/mobile-web-admin-panel </h3>
 <img src="Doc/user logn.png" />
 <img src="Doc/user signUp.png" />
 <img src="Doc/user a.png" />
