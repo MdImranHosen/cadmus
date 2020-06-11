@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^index/?$ index.php [NC,L]
+RewriteRule ^Sign-Up/?$ sign-up.php [NC,L]
+RewriteRule ^main/?$ main.php [NC,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.php($|\ |\?)
+RewriteRule ^ /%1 [R=301,L]
+
+RewriteRule ^preview/([0-9]+)/?$ preview.php?perticepents=$1
+
+RewriteCond %{HTTP_HOST} ^localhost/dev [NC]
+RewriteRule ^(.*)$ http://localhost/dev/$1 [L,R=301,NC]

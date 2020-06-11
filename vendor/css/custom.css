@@ -1,0 +1,112 @@
+:root {
+  --main-bg-color: #000000;
+  --main-txt-color: white;  
+  --main-bottom_nav-color:#383636;
+  --main-border-color:#4a4a4a;
+}
+
+
+.navbar_bottom {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding:5px;
+  z-index: 9999;
+}
+
+.navbar_bottom a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar_bottom a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+.navbar_bottom a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.trns_button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.navbar-brand-centered {
+    position: absolute;
+    left: 40%;
+    display: block;     
+    text-align: center;  
+}
+
+.sidenav {
+  height: 100%; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; 
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+.cstyle_top{
+  padding-top: 50px;
+}
+.cstyle_ctop{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.cstyle_cbottom{
+  padding-bottom: 20px; 
+}
+.modal{
+  z-index: 9999999;
+}
+#image_on{cursor: pointer;border-radius: 50%;width: 30%;height: auto;}
+.cstyle_profile{min-width: 50%;height: auto;display: block;}
+.cstyle_profile_text{margin-left: 20%;}
+.cstyle_video{max-width: 100%;height: auto;}
+
+.trns_button > a.cstyle_admin_nev:hover{
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  right: 12px;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+@media (max-width: 768px){
+  #image_on{width: 50%;}
+  .onclickusers{margin-bottom: 3px;}
+}
